@@ -1,0 +1,12 @@
+#include <Arduino.h>
+
+void setup() {
+  Serial.begin(115200);
+  delay(1000); // dá tempo pro Windows "enxergar" a porta
+  Serial.println("ESP32-S3 ligado!");
+}
+
+void loop() {
+  Serial.println("Ping...");
+  delay(1000);
+}
